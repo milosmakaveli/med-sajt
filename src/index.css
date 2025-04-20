@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Dark Mode  */
+body.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+
+body.dark-mode .card {
+  background-color: #333;
+  color: #f1f1f1;
+}
+
+body.dark-mode .btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.success-message {
+  position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  z-index: 1000;
+  display: block; 
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-color: #f9c74f;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: fixed;  
+    bottom: 0;  
+    left: 0; 
+    right: 0; 
+    text-align: center;
+    color: #4a2c00;
+    font-size: 14px;
+    z-index: 10; 
+  }
+  
+  /* Dark Mode */
+  body.dark-mode .footer {
+    background-color: #333;  
+    color: #fff; 
+  }
