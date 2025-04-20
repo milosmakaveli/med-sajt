@@ -28,7 +28,7 @@ const products = [
     },
     {
       id: 4,
-      name: "Med sa žaraom",
+      name: "Med sa žarom",
       price: 1500,
       image: Zara,
       description: "Med sa semenom koprive je prirodni eliksir bogat gvožđem..."

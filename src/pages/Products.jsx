@@ -1,7 +1,7 @@
 import React from "react";
 import products from "../data/products";
 import ProductCard from "../components/ProductCard";
-import "./Products.css";  // Importing the CSS for the Products page
+import "./Products.css";
 
 function Products({ addToCart }) {
   return (

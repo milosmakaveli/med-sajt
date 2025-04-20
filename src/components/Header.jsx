@@ -16,7 +16,8 @@ import {
 function Header() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark";
+    if (savedTheme === "dark") return true;
+    return false; 
   });
 
   useEffect(() => {
