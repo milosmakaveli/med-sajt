@@ -22,7 +22,7 @@ const ProductCard = ({ product, addToCart }) => {
 
       <h3 className="product-title">{product.name}</h3>
       <p className="product-description">{product.description}</p>
-      <p className="product-price">RSD {product.price.toFixed(2)}</p>
+      <p className="product-price">{product.price.toFixed(2)} RSD</p>
 
       <div className="quantity-controls">
         <label htmlFor={`qty-${product.id}`} className="quantity-label">
