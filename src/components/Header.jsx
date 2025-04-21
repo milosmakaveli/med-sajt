@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
@@ -12,12 +12,11 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
-
-function Header() {
+function Header({ cartItems }) {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") return true;
-    return false; 
+    return false;
   });
 
   useEffect(() => {
@@ -46,8 +45,9 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/cart" title="Cart">
+            <Link to="/cart" title="Cart" className="cart-link">
               <FontAwesomeIcon icon={faShoppingCart} className="nav-icon" />
+              {cartItems.length > 0 && <span className="cart-notification"></span>}
             </Link>
           </li>
           <li>

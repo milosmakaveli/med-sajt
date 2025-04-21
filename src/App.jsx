@@ -40,7 +40,7 @@ function App() {
 
   return (
     <BrowserRouter basename='/med-sajt'>
-    <Header />
+    <Header cartItems={cart} />
     <main className="main-content">
       <Routes>
         <Route path="/" element={<Home />} />

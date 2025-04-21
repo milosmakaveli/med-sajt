@@ -3,6 +3,7 @@ import Medusacu from '../assets/medusacu.jpg'
 import Propolis from '../assets/propolis.jpg'
 import Zara from '../assets/zara.jpg'
 import Medsapolenom from '../assets/Medsapolenom.jpg'
+import Vosak from '../assets/vosak.jpg'
 
 const products = [
     {

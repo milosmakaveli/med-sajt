@@ -1,15 +1,18 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #f9c74f;
     border-radius: 5px;
-    padding: 15px;
+    padding: 8px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    flex-wrap: wrap;
-    position: relative;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    width: 100%;
     overflow-x: hidden;
+    flex-wrap: wrap;
   }
   
   /*Logo*/
@@ -20,13 +23,13 @@
   }
   
   .logo-img {
-    width: 90px;
+    width: 70px;
     margin-right: 10px;
     border-radius: 10px;
   }
   
   .logo {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: black;
     text-transform: uppercase;
@@ -35,19 +38,22 @@
   
   /* Navigation*/
   nav {
+    display: flex;
+    justify-content: center;
     flex-grow: 1;
-    overflow-x: auto;
+    align-items: center;
+    
   }
   
   .nav-links {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: 35px;
+    gap: 45px;
     list-style: none;
     padding: 0;
     margin: 0;
     overflow-x: auto;
+    max-width: 100%;
   }
   
   .nav-links li a {
@@ -56,7 +62,7 @@
   }
   
   .nav-icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #333;
     transition: color 0.3s ease;
   }
@@ -64,29 +70,48 @@
   .nav-links li a:hover .nav-icon {
     color: #ff6600;
   }
+
+
+  .cart-link {
+    position: relative;
+  }
+  
+  .cart-notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
   
   /*Theme Toggle Button*/
   .theme-toggle-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
     z-index: 1000;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background-color: #f9c74f;
     border: 2px solid #333;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
     aspect-ratio: 1 / 1;
   }
+
+  .theme-toggle-button .fa-moon {
+    color: black !important; /* Ensures the moon icon is black in both light and dark mode */
+  }
   
   .theme-toggle-button:hover {
-    background-color: #333;
     color: #fff;
     border-color: #fff;
   }
@@ -109,17 +134,50 @@
     background-color: #333;
     color: #fff;
     border-color: #f0edeb;
+    height: 40px !important;
+    width: 40px !important;
+  }
+
+
+  @media (min-width: 769px) {
+    .header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 7px 10px;
+    }
+  
+    .logo-container {
+      flex-shrink: 0;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+      margin: 0 auto; 
+    }
+  
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 45px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+      margin-left: -150px;
+    }
   }
  
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
-      align-items: flex-start;
-      padding: 10px;
+      padding: 8px 10px;
     }
   
     .logo-container {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
   
     .nav-links {
