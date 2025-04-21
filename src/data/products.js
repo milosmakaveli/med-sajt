@@ -39,6 +39,13 @@ const products = [
       price: 1700,
       image: Medsapolenom,
       description: "Ova izuzetna mešavina je poznata kao eliksir dugovečnosti..."
+    },
+    {
+      id: 6,
+      name: "Vosak 1kg",
+      price: 1100,
+      image: Vosak,
+      description: "Vosak se odlikuje lekovitim svojstvima i ima širok spektar upotrebe, neka od njih su lečenje povreda i oboljenja kože, spravljanje krema i melema"
     }
   ];
   
