@@ -11,35 +11,35 @@ const products = [
       name: "Bagremov med 1kg",
       price: 1200,
       image: Bagremov,
-      description: "Med od bagrema poseduje blage antibakterijske i protivzapaljenske osobine..."
+      description: "Med od bagrema poseduje blage antibakterijske i protivzapaljenske osobine"
     },
     {
       id: 2,
       name: "Med u saću 1kg",
       price: 2000,
       image: Medusacu,
-      description: "Med u saću ima antibakterijsko, antivirusno i antigljivično dejstvo..."
+      description: "Med u saću ima antibakterijsko, antivirusno i antigljivično dejstvo"
     },
     {
       id: 3,
       name: "Propolis kapi 20ml",
       price: 250,
       image: Propolis,
-      description: "Savremena istraživanja naglašavaju dobra svojstva propolisa kao leka..."
+      description: "Savremena istraživanja naglašavaju dobra svojstva propolisa kao leka"
     },
     {
       id: 4,
       name: "Med sa žarom 1kg",
       price: 1500,
       image: Zara,
-      description: "Med sa semenom koprive je prirodni eliksir bogat gvožđem..."
+      description: "Med sa semenom koprive je prirodni eliksir bogat gvožđem"
     },
     {
       id: 5,
       name: "Med sa polenom 1kg",
       price: 1700,
       image: Medsapolenom,
-      description: "Ova izuzetna mešavina je poznata kao eliksir dugovečnosti..."
+      description: "Ova izuzetna mešavina je poznata kao eliksir dugovečnosti"
     },
     {
       id: 6,

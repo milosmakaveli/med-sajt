@@ -8,10 +8,9 @@ function Cart({ cart, removeFromCart, clearCart }) {
 
   return (
     <div className="cart-page">
-      <h2>Vaša Korpa</h2>
       {cart.length === 0 ? (
         <p className="empty-cart">
-          Vaša korpa je prazna. <Link to="/products">Počnite kupovinu</Link>
+          Vaša korpa je prazna. <br /> <Link to="/products">Počnite kupovinu</Link>
         </p>
       ) : (
         <div>
@@ -28,7 +27,7 @@ function Cart({ cart, removeFromCart, clearCart }) {
                   <div className="cart-item-details">
                     <p>{item.name}</p>
                     <p>Količina: {item.quantity}</p>
-                    <p>Cena: RSD {(item.price * item.quantity).toFixed(2)}</p>
+                    <p>Cena: {(item.price * item.quantity).toFixed(2)} RSD</p>
                   </div>
                 </div>
                 <button className="remove-btn" onClick={() => removeFromCart(index)}>Ukloni</button>
@@ -38,9 +37,9 @@ function Cart({ cart, removeFromCart, clearCart }) {
           </div>
        
           <div className="cart-summary">
-            <p>Ukupno: RSD {total.toFixed(2)}</p>
+            <p>Ukupno: {total.toFixed(2)} RSD</p>
             <button className="clear-cart" onClick={clearCart}>
-              Očisti korpu
+              Očisti sve stavke
             </button>
             <Link to="/checkout" className="checkout-button">
               Potvrdi porudžbinu

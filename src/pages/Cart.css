@@ -1,17 +1,11 @@
 
 .cart-page {
-    padding: 20px;
     background-color: #fff; 
     color: #333; 
     min-height: 100vh;
   }
   
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    text-align: center;
-  }
+  
   
   .cart-items {
     list-style: none;
@@ -23,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: #f9f9f9;  
     border: 1px solid #ddd;
@@ -40,29 +35,29 @@
   }
   
   .cart-item-image {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
   }
   
   .cart-item-details p {
     margin: 5px 0;
+    font-weight: bold;
   }
   
   button {
     padding: 8px 12px;
     background-color: #f1b300;
+    font-size: 1rem;
     border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
+
   
-  button:hover {
-    background-color: #e09c00;
-  }
   
   .cart-summary {
     display: flex;
@@ -72,14 +67,18 @@
   }
   
   .cart-summary p {
-    font-size: 1.2rem;
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-weight: bold ;
+    margin-bottom: 10px;
   }
   
   .clear-cart {
     padding: 10px 20px;
+    margin-bottom: 10px;
     background-color: #ff4c4c;
+    font-size: 1rem;
     font-weight: bold;
-    border: none;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -88,6 +87,15 @@
   
   .empty-cart {
     text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #f1b300;
+  }
+
+  .empty-cart a {
+    color: #121212;
+    font-style: italic;
   }
   
   .clear-cart:hover {
@@ -100,10 +108,14 @@
   }
   .checkout-button {
     padding: 10px 20px;
-    background-color: #4caf50;
-    border-radius: 5px;
-    color: #fff;
+    margin-bottom: 10px;
+    background-color: #4caf50;;
+    font-size: 1rem;
+    font-weight: bold;
     text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
@@ -183,7 +195,7 @@
     }
   
     .cart-summary p {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   
     button {
@@ -218,7 +230,7 @@
     }
   
     .cart-summary p {
-      font-size: 1rem; 
+      font-size: 1.3rem; 
     }
   
     button {
@@ -255,7 +267,7 @@
     }
   
     .cart-summary p {
-      font-size: 0.9rem;  
+      font-size: 1.3rem;  
     }
   
     button {

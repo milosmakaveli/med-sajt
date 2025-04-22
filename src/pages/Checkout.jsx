@@ -44,7 +44,7 @@ function Checkout({ cart }) {
           />
         </label>
         <div className="order-summary">
-          <p>Total: RSD: {total.toFixed(2)}</p>
+          <p>Ukupno: {total.toFixed(2)} RSD</p>
         </div>
         <button type="submit" className="submit-button">Izvrši Porudzbinu</button>
       </form>

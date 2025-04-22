@@ -6,7 +6,7 @@ import "./Products.css";
 function Products({ addToCart }) {
   return (
     <div className="products-page">
-      <h2 className="products-title">Proizvodi u ponudi</h2>
+      <h2 className="products-title">Proizvodi u ponudi:</h2>
       <div className="product-grid">
         {products.map((product) => (
           <ProductCard

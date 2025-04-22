@@ -9,13 +9,13 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 /* Dark Mode  */
 body.dark-mode {
-  background-color: #121212; /* Dark background */
-  color: #e0e0e0; /* Light text color */
+  background-color: #121212; 
+  color: #e0e0e0; 
 }
 
 
@@ -31,18 +31,18 @@ body.dark-mode .btn {
 
 .success-message {
   position: fixed;
-  bottom: 20px; 
+  bottom: 50px; 
   left: 50%;
   transform: translateX(-50%); 
   background-color: #4CAF50;
   color: white;
   padding: 10px;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
   z-index: 1000;
   display: block; 
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 @keyframes fadeOut {
