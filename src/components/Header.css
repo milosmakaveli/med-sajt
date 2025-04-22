@@ -77,7 +77,7 @@ nav {
 
 .cart-notification {
   position: absolute;
-  top: -5px;
+  top: -2px;
   right: -5px;
   background-color: red;
   width: 15px;
