@@ -1,0 +1,46 @@
+.map-container {
+    width: 100%; 
+    max-width: 600px; 
+    height: 40vh; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 60px; 
+}
+
+/* Dark mode adjustments for map container */
+body.dark-mode .map-container .leaflet-container {
+    background-color: #333; 
+}
+
+/* Zoom control buttons styling */
+body.dark-mode .leaflet-control-zoom-in,
+body.dark-mode .leaflet-control-zoom-out {
+    background-color: #555; 
+    color: #fff; 
+    border: 1px solid #777;
+}
+
+/* Hover effect on zoom buttons */
+body.dark-mode .leaflet-control-zoom-in:hover,
+body.dark-mode .leaflet-control-zoom-out:hover {
+    background-color: #888; 
+    color: #fff; 
+    border-color: #bbb; 
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        width: 90%; 
+        height: 40vh; 
+        margin-bottom: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        width: 100%; 
+        height: 35vh; 
+        margin-bottom: 60px; 
+    }
+}
